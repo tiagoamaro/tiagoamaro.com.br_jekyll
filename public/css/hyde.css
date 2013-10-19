@@ -363,11 +363,9 @@ a:hover {
 }
 #about ul {
   list-style-type: none;
-  display: inline;
 }
 #about li {
-  display: inline;
-  margin-right: 50px;
+  margin-bottom: 10px;
 }
 #about #links {
   margin-top: 10px;
