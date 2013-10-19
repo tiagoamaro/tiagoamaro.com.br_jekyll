@@ -305,7 +305,7 @@ a:hover {
   }
   .masthead-inner {
     position: absolute;
-    bottom: 0;
+    top: 0;
     right: 0;
     left: 0;
   }
@@ -339,7 +339,7 @@ a:hover {
 #twitter-timeline {
   margin-top: 2%;
   margin-bottom: 2%;
-  margin-left: 15%;
+  margin-left: 25%;
   width: 100%;
 }
 .ruby { color: #830000; }
