@@ -340,7 +340,11 @@ a:hover {
   margin-top: 2%;
   margin-bottom: 2%;
   margin-left: 25%;
-  width: 100%;
+}
+@media (max-width: 768px) {
+  #twitter-timeline {
+    margin: 0 auto;
+  }
 }
 .ruby { color: #830000; }
 .dev { color: #00B339; }
