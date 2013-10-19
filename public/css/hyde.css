@@ -185,14 +185,14 @@ a:hover {
 /* Header */
 .masthead {
   color: #fff;
-  background-color: #2a2a2a;
+  background-color: #105B63;
 }
 .masthead-inner {
   padding: 20px;
 }
 .masthead h1 {
   margin-top: 0;
-  font-family: "Abril Fatface";
+  font-family: "Berkshire Swash";
 }
 .masthead .lead {
   font-size: 20px;
@@ -200,13 +200,13 @@ a:hover {
   margin-bottom: 0;
 }
 .masthead a {
-  color: #fff;
+  color: #FFFAD5;
 }
 
 /* Footer area of masthead */
 .colophon {
   margin-top: 20px;
-  color: #7a7a7a;
+  color: #FFFAD5;
 }
 .colophon-links {
   margin: 0 0 15px;
