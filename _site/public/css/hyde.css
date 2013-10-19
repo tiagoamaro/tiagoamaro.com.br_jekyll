@@ -336,12 +336,9 @@ a:hover {
 }
 
 /* Customizations */
-@media (min-width: 768px) {
-  #twitter-timeline {
-    position: fixed;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 8%;
-    width: 100%;
-  }
+#twitter-timeline {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 15%;
+  width: 100%;
 }
