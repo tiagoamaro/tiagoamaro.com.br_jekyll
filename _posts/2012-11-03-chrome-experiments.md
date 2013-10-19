@@ -7,8 +7,6 @@ Google always seeks new ways to amaze their users. Regardless of the level of ex
 
 As an incentive for ideas, Google has a lab to display experiments developed with HTML5 and JavaScript. [Chrome Experiments](http://www.chromeexperiments.com/) has a range of over 500 experiments by artists / developers worldwide.
 
-READMORE
-
 When they reached the mark of 500 experiments, the site launched an [experiment](http://500.chromeexperiments.com/) that helps categorize the many experiments on the site.
 
 Among the many experiments, are two that caught my attention: [Plink](http://labs.dinahmoe.com/plink/) (using NodeJS and Web Audio API) and [Lights](http://lights.elliegoulding.com/). It is interesting to see that characteristics of musical interaction with the user, arouse a sense of curiosity on the "player".

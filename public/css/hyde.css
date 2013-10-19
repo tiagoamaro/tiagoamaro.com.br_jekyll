@@ -342,3 +342,36 @@ a:hover {
   margin-left: 15%;
   width: 100%;
 }
+.ruby { color: #830000; }
+.dev { color: #00B339; }
+.geek { color: #E2C16F; }
+
+  /* About */
+@media (min-width: 768px) {
+  #about {
+    padding-left: 10px;
+    margin: 0 10px;
+  }
+}
+#about {
+  margin-top: 10px;
+}
+#about img {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#about ul {
+  list-style-type: none;
+  display: inline;
+}
+#about li {
+  display: inline;
+  margin-right: 50px;
+}
+#about #links {
+  margin-top: 10px;
+}
+#about a {
+  text-decoration: none;
+}
