@@ -214,6 +214,18 @@ a:hover {
   list-style: none;
 }
 
+/* Social networks area of masthead*/
+.colophon .social-networks {
+  text-align: center;
+}
+@media (max-width: 768px) {
+ .colophon .social-networks {
+    text-align: left;
+  }
+}
+.colophon .social-networks i {
+  margin-right: 20px;
+}
 
 /* Posts
 -------------------------------------------------- */
