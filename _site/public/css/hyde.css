@@ -186,6 +186,7 @@ a:hover {
 .masthead {
   color: #fff;
   background-color: #105B63;
+  box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.75);
 }
 .masthead-inner {
   padding: 20px;
@@ -376,6 +377,10 @@ a:hover {
 }
 #about li {
   margin-bottom: 10px;
+}
+#about li span {
+  color: #222;
+  font-weight: 600;
 }
 #about #links {
   margin-top: 10px;
