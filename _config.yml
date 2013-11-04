@@ -1,4 +1,5 @@
 markdown:     rdiscount
+future:       false
 permalink:    pretty
 pygments:     true
 paginate:     5
