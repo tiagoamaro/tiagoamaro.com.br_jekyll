@@ -77,6 +77,9 @@ ul, ol {
 li {
   color: #888580;
 }
+li ul, li ol {
+  margin-left: 25px;
+}
 
 hr {
   position: relative;
@@ -231,12 +234,8 @@ a:hover {
 -------------------------------------------------- */
 
 /* Wrapper for all posts on homepage */
-.posts {
+.posts, .related, .comments {
   margin-left:  20px;
-  margin-right: 20px;
-}
-.related {
-  margin-left: 20px;
   margin-right: 20px;
 }
 
