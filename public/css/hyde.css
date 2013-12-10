@@ -366,6 +366,26 @@ a:hover {
 .dev { color: #00B339; }
 .geek { color: #E2C16F; }
 
+  /*Instagram*/
+#instagram {
+  margin-top: 10px;
+}
+
+#instagram {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+@media (max-width: 768px) {
+  #instafeed {
+    margin: 0 auto;
+  }
+}
+
+#instafeed img {
+  float: left;
+  padding-right: 20px;
+}
+
   /* About */
 @media (min-width: 768px) {
   #about {

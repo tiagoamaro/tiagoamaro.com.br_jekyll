@@ -1,0 +1,21 @@
+---
+layout: default
+title: Instagram
+---
+
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: 2298453,
+        accessToken: '2298453.af447cb.b1080793f4f54648905d3a82b07d4f08',
+        clientId: 'af447cbe954244fd8e3a0147d520258c',
+        limit: 60,
+        resolution: 'low_resolution'
+    });
+    feed.run();
+</script>
+
+<div id="instagram">
+  <h1>Instagram</h1>
+  <div id="instafeed"></div>
+</div>

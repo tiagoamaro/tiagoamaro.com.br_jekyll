@@ -11,7 +11,7 @@
     <meta name="description" content="Tiago Amaro personal website. Developer and Geek.">
 
     <title>
-      About | 
+      Instagram | 
       Tiago Amaro
     </title>
 
@@ -68,64 +68,23 @@
     </header>
 
     <div class="content container">
-      <div id="about">
-  <h1>About me</h1>
-  <div id="quotation">
-    <img src="http://www.gravatar.com/avatar/82bc2f965db7e87993538fa822bbcfac?s=80" alt="Tiago Amaro">
+      <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: 2298453,
+        accessToken: '2298453.af447cb.b1080793f4f54648905d3a82b07d4f08',
+        clientId: 'af447cbe954244fd8e3a0147d520258c',
+        limit: 60,
+        resolution: 'low_resolution'
+    });
+    feed.run();
+</script>
 
-    <blockquote>
-      Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
-      <br>
-      <small><cite>Martin Fowler</cite></small>
-    </blockquote>
-  </div>
-
-  <div id="description">
-    Hi, my name is Tiago Amaro, and I am a brazilian developer living in Rio de Janeiro focused on web technologies. My current  programming language is <span class="ruby">ruby</span> and my favorite developing environment is SublimeText 3 (With <span class="dev">Vintage</span> package enabled :D).
-  </div>
-
-  <div id="links">
-    <h2>Where to find me:</h2>
-    <ul>
-      <li>
-        <span>
-          <i class="fa fa-envelope fa-lg"></i>
-          tiagocis at gmail dot com
-        </span>
-      </li>
-      <li>
-        <a href="https://github.com/tiagoamaro">
-          <i class="fa fa-github fa-lg"></i>
-          Github
-        </a>
-      </li>
-      <li>
-        <a href="http://gist.github.com/tiagoamaro">
-          <i class="fa fa-github-alt fa fa-lg"></i>
-          Gists
-        </a>
-      </li>
-      <li>
-        <a href="http://twitter.com/tiagocis">
-          <i class="fa fa-twitter fa-lg"></i>
-          Twitter
-        </a>
-      </li>
-      <li>
-        <a href="https://plus.google.com/114988746507715114984">
-          <i class="fa fa-google-plus-square fa-lg"></i>
-          Google+
-        </a>
-      </li>
-      <li>
-        <a href="http://instagram.com/tiagoamaro">
-          <i class="fa fa-instagram fa-lg"></i>
-          Instagram
-        </a>
-      </li>
-    </ul>
-  </div>
+<div id="instagram">
+  <h1>Instagram</h1>
+  <div id="instafeed"></div>
 </div>
+
     </div>
 
     <script type="text/javascript">
