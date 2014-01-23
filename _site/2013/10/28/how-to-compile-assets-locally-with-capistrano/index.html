@@ -86,20 +86,19 @@
 <p>There are some points that I recommended before you use Capistrano in your deployment workflow:</p>
 
 <ol>
-<li>Check if you have passwordless SSH access to your remote machine. If you use default Ubuntu SSH settings, just add your <code>id_rsa.pub</code> content to the <code>~/.ssh/authorized_keys</code> of your logging user</li>
-<li>Before anything, run <code>cap deploy:check</code> to verify if your remote machine have the necessary folders to run the Capistrano tasks</li>
-<li>If your machine does not have the necessary folders, run <code>cap deploy:setup</code>, and Capistrano will take care of creating its necessary folder structure</li>
-<li>You can always check all Capistrano tasks available to you running the <code>Cap -T</code> command (and <code>Cap -vT</code> for tasks without documentation)</li>
+  <li>Check if you have passwordless SSH access to your remote machine. If you use default Ubuntu SSH settings, just add your <code>id_rsa.pub</code> content to the <code>~/.ssh/authorized_keys</code> of your logging user</li>
+  <li>Before anything, run <code>cap deploy:check</code> to verify if your remote machine have the necessary folders to run the Capistrano tasks</li>
+  <li>If your machine does not have the necessary folders, run <code>cap deploy:setup</code>, and Capistrano will take care of creating its necessary folder structure</li>
+  <li>You can always check all Capistrano tasks available to you running the <code>Cap -T</code> command (and <code>Cap -vT</code> for tasks without documentation)</li>
 </ol>
 
+<h2 id="capistrano-and-rails-assets">Capistrano and Rails assets</h2>
 
-<h2>Capistrano and Rails assets</h2>
+<p>After a couple of minutes playing with Capistrano on Rails production environment, you’ll notice that you do not get assets precompiling or <code>bundle install</code> by default on <code>cap deploy</code> task. To activate them, you should add <code>require 'bundler/capistrano'</code> to your <code>deploy.rb</code> file and uncomment the line <code>load 'deploy/assets'</code> on your <code>Capfile</code>.</p>
 
-<p>After a couple of minutes playing with Capistrano on Rails production environment, you'll notice that you do not get assets precompiling or <code>bundle install</code> by default on <code>cap deploy</code> task. To activate them, you should add <code>require 'bundler/capistrano'</code> to your <code>deploy.rb</code> file and uncomment the line <code>load 'deploy/assets'</code> on your <code>Capfile</code>.</p>
+<p>In my case, compiling assets on production environment was a very bad experience. It was a VPS running with just 512MB RAM, and only one processor. So, what if we could compile these assets locally (generally 8GB+ RAM and quad core processors), and then upload? It’s easy!</p>
 
-<p>In my case, compiling assets on production environment was a very bad experience. It was a VPS running with just 512MB RAM, and only one processor. So, what if we could compile these assets locally (generally 8GB+ RAM and quad core processors), and then upload? It's easy!</p>
-
-<p>After a little research and some gists later, I found <a href="http://fernando.blat.es/post/12563486374/optimize-deploy-time-compiling-your-assets-locally">this blog post</a> that had the answer to my question. This gist is based on Fernando Blat's post, with some little adjustments. Enjoy :)</p>
+<p>After a little research and some gists later, I found <a href="http://fernando.blat.es/post/12563486374/optimize-deploy-time-compiling-your-assets-locally">this blog post</a> that had the answer to my question. This gist is based on Fernando Blat’s post, with some little adjustments. Enjoy :)</p>
 
 <script src="https://gist.github.com/6303123.js"> </script>
 
