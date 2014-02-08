@@ -174,7 +174,7 @@ img {
 
 a {
   font-weight: 600;
-  color: #222;
+  color: #16808c;
   text-decoration: none;
 }
 a:hover {
@@ -194,7 +194,7 @@ a:hover {
 .masthead-inner {
   padding: 20px;
 }
-.masthead h1 {
+.masthead #name {
   margin-top: 0;
   font-family: "Berkshire Swash";
 }
@@ -299,7 +299,7 @@ a:hover {
   body {
     font-size: 18px;
   }
-  .masthead h1 {
+  .masthead #name {
     font-size: 64px;
   }
 
