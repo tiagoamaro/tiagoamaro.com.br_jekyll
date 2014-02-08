@@ -229,6 +229,14 @@ a:hover {
 .colophon .social-networks i {
   margin-right: 20px;
 }
+  /* Esater Egg */
+.colophon #easter_egg {
+  display: none;
+}
+.colophon #doom {
+  width: 40px;
+  margin-bottom: -10px;
+}
 
 /* Posts
 -------------------------------------------------- */
