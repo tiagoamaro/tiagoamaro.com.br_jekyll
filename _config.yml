@@ -1,5 +1,5 @@
-markdown:     kramdown
-future:       false
-permalink:    pretty
-pygments:     true
-paginate:     5
+markdown:    kramdown
+future:      false
+permalink:   pretty
+highlighter: pygments
+paginate:    5
