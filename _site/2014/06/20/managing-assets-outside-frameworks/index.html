@@ -11,7 +11,7 @@
     <meta name="description" content="Tiago Amaro personal website. Developer and Geek.">
 
     <title>
-      Chrome Experiments and Web Lab | 
+      Managing Assets Outside Frameworks (Introducing Comffee) | 
       Tiago Amaro
     </title>
 
@@ -72,28 +72,29 @@
 
     <div class="content container">
       <div class="post">
-  <h1>Chrome Experiments and Web Lab</h1>
-  <span class="post-date">03 Nov 2012</span>
-  <p>Google always seeks new ways to amaze their users. Regardless of the level of expertise of the user, who has not spent some time at some Doodle as <a href="http://www.google.com/pac-man">PAC-MAN</a> on Google homepage?</p>
+  <h1>Managing Assets Outside Frameworks (Introducing Comffee)</h1>
+  <span class="post-date">20 Jun 2014</span>
+  <p>If you want to manage assets outside a framework, check out <a href="https://github.com/tiagoamaro/comffee">Comffee</a>: a GulpJS/GruntJS project that allows you to manage your assets using Sass, CoffeeScript and Bootstrap.</p>
 
-<p>As an incentive for ideas, Google has a lab to display experiments developed with HTML5 and JavaScript. <a href="http://www.chromeexperiments.com/">Chrome Experiments</a> has a range of over 500 experiments by artists / developers worldwide.</p>
+<p>TL;DR</p>
 
-<p>When they reached the mark of 500 experiments, the site launched an <a href="http://500.chromeexperiments.com/">experiment</a> that helps categorize the many experiments on the site.</p>
+<p>The frontend community developed some great tools in the last years. Projects like <a href="http://gruntjs.com/">GruntJS</a> and <a href="http://gulpjs.com/">GulpJS</a> are already used in the daily workflow of many frontend developers around the world, giving these tools a really impressive amount of plugins and functionality.</p>
 
-<p>Among the many experiments, are two that caught my attention: <a href="http://labs.dinahmoe.com/plink/">Plink</a> (using NodeJS and Web Audio API) and <a href="http://lights.elliegoulding.com/">Lights</a>. It is interesting to see that characteristics of musical interaction with the user, arouse a sense of curiosity on the “player”.</p>
+<p>When I met GruntJS, I was impressed. Grunt automated some very annoying and repetitive tasks, and it could watch any file changes too! If I could not use <a href="http://guides.rubyonrails.org/asset_pipeline.html">Rails asset pipeline</a>, I could configure Grunt to do some dirty work done.</p>
 
-<p>Besides the many experiments, Google built with the <a href="http://www.sciencemuseum.org.uk/">London Science Museum</a> a fascinating interaction with various samples of museum. Everything that happens on the web, it happens in real time at the Museum of London, and people visiting the museum can see what is happening live web as <a href="http://www.chromeweblab.com/en/universal-orchestra">instruments controlled by users</a> or even a <a href="http://www.chromeweblab.com/en/sketchbots">sketch of your face made by robots!</a></p>
+<p>After some reading and configuration, I came up with <a href="https://github.com/tiagoamaro/comffee">Comffee</a>, a project that allows you to use Sass, CoffeeScript and Bootstrap outside Rails. Basically, Comffee is a project that reunites plugins written for Gulp and Grunt, so you can easily create a folder in your project, run <code>npm install</code> and get ready to rock.</p>
+
+<p>Comffee has two implementations: <a href="https://github.com/tiagoamaro/comffee-grunt">comffee-grunt</a> and <a href="https://github.com/tiagoamaro/comffee-gulp">comffee-gulp</a>. For more information about its installation and how it works, check each project description.</p>
+
+<h2 id="bonus-sharing-localhost-with-the-world">Bonus: Sharing localhost with the world</h2>
+
+<p>When you are ready to show your project to other people, you could mix Comffee with <a href="http://fenixwebserver.com/">Fenix</a>. Fenix (only for OSX and Windows) is a project that manages localtunnels for you, making your <code>localhost:port</code> of choice easily visible to the outside world.</p>
 
 </div>
 
 <div class="related">
   <h2>Related Posts</h2>
   <ul>
-    
-      <h3><a href="/2014/06/20/managing-assets-outside-frameworks/">
-        Managing Assets Outside Frameworks (Introducing Comffee)
-        <small>20 Jun 2014</small>
-      </a></h3>
     
       <h3><a href="/2014/03/30/sublime-packages/">
         Sublime Text - My Personal Choices of Packages
@@ -105,19 +106,24 @@
         <small>08 Feb 2014</small>
       </a></h3>
     
+      <h3><a href="/2013/11/23/editor-war/">
+        Editor war - The bloodshed behind productivity
+        <small>23 Nov 2013</small>
+      </a></h3>
+    
   </ul>
 </div>
 
 <div class="comments">
   <h2>Social</h2>
-  <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://tiagoamaro.com.br/2012/11/03/chrome-experiments/" data-via="tiagocis" data-text="Chrome Experiments and Web Lab">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://tiagoamaro.com.br/2014/06/20/managing-assets-outside-frameworks/" data-via="tiagocis" data-text="Managing Assets Outside Frameworks (Introducing Comffee)">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   <div id="disqus_thread"></div>
   <script type="text/javascript">
       /* CONFIGURATION VARIABLES */
       var disqus_shortname = 'tiagoamaro';
-      var disqus_identifier = '/2012/11/03/chrome-experiments/';
-      var disqus_title = 'Chrome Experiments and Web Lab';
+      var disqus_identifier = '/2014/06/20/managing-assets-outside-frameworks/';
+      var disqus_title = 'Managing Assets Outside Frameworks (Introducing Comffee)';
 
       /* DON'T EDIT BELOW THIS LINE */
       (function() {
