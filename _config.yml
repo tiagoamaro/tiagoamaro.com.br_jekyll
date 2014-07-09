@@ -1,5 +1,6 @@
 markdown:    kramdown
 future:      false
+exclude:     ['Gemfile', 'LICENSE', 'README']
 permalink:   pretty
 highlighter: pygments
 paginate:    5
