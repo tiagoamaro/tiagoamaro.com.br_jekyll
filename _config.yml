@@ -4,3 +4,5 @@ exclude:     ['Gemfile', 'LICENSE', 'README']
 permalink:   pretty
 highlighter: pygments
 paginate:    5
+gems:
+  - jekyll-sitemap
