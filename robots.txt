@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /404.html
+Sitemap: http://tiagoamaro.com.br/sitemap.xml
