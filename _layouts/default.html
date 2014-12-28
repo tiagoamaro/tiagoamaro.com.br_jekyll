@@ -1,73 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-    <!-- Meta SEO -->
-    <meta name="description" content="Tiago Amaro personal website. Developer and Geek.">
+  {% include head.html %}
 
-    <title>
-      {% if page.title %}{{ page.title }} | {% endif %}
-      Tiago Amaro
-    </title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/public/css/hyde.css">
-    <link rel="stylesheet" href="/public/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700|Berkshire+Swash">
-
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/touch-icon-144-precomposed.png">
-    <link rel="shortcut icon" href="/public/favicon.png">
-
-    <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-  </head>
   <body>
-    <!-- JS -->
-    <script src="/public/js/instafeed.min.js"></script>
-    <script src="/public/js/konami.js"></script>
 
-    <header class="masthead">
-      <div class="masthead-inner">
-        <span id="name">Tiago Amaro</span>
-        <p class="lead">
-          Ideas && Dev
-        </p>
-
-        <div class="colophon">
-          <ul class="colophon-links">
-            <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="/twitter"><i class="fa fa-twitter"></i> Twitter</a></li>
-            <li><a href="/instagram"><i class="fa fa-instagram"></i> Instagram</a></li>
-            <li><a href="/about"><i class="fa fa-paperclip"></i> About</a></li>
-          </ul>
-          <p>
-            <small>
-              &copy;2015. Built with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>, <a href="http://andhyde.com" target="_blank">Hyde</a> and <a href="http://pages.github.com/" target="_blank">Github Pages</a>.
-            </small>
-          </p>
-          <p class="social-networks">
-            <a href="https://github.com/tiagoamaro">
-              <i class="fa fa-github fa-2x"></i>
-            </a>
-            <a href="http://twitter.com/tiagocis">
-              <i class="fa fa-twitter fa-2x"></i>
-            </a>
-            <a id="easter_egg" href="https://www.google.com.br/?#q=iddqd">
-              <img src="/public/images/doom_marine.gif" alt="doom marine" id="doom">
-            </a>
-          </p>
-        </div>
-      </div>
-    </header>
+    {% include sidebar.html %}
 
     <div class="content container">
       {{ content }}
     </div>
-
-    {% include google_analytics.html %}
 
   </body>
 </html>
