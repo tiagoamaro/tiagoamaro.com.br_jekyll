@@ -1,0 +1,55 @@
+/* Themes */
+
+.theme-base-10 .sidebar {
+  background-color: #105B63;
+  color: #FFFAD5;
+}
+.theme-base-10 .content a,
+.theme-base-10 .related-posts li a:hover {
+  color: #105B63;
+}
+
+/* Sidebar */
+
+.sidebar-sticky {
+  top: 1rem;
+}
+
+.sidebar h1 {
+  font-family: 'Berkshire Swash';
+  font-weight: normal;
+}
+
+  /* Social networks */
+
+.sidebar #social-networks {
+  text-align: center;
+}
+.sidebar #social-networks a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+.sidebar #social-networks img {
+  margin: 0;
+}
+
+#easter_egg {
+  display: none;
+}
+
+/* Content */
+
+.content {
+  max-width: 100%;
+}
+
+/* Instafeed and Twitter */
+
+#twitter-timeline .twitter-timeline {
+  width: 100% !important;
+}
+
+#instafeed a {
+  float: left;
+  margin-right: 20px;
+}

@@ -1,426 +1,250 @@
 /*
- __                  __
-/\ \                /\ \
-\ \ \___   __  __   \_\ \     __
- \ \  _ `\/\ \/\ \  /'_` \  /'__`\
-  \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
-   \ \_\ \_\/`____ \ \___,_\ \____\
-    \/_/\/_/`/___/> \/__,_ /\/____/
-               /\___/
-               \/__/
-
-Hyde is an elegant, open source, mobile first theme for Jekyll.  It includes
-lightweight styles and placeholder content to get you up and running with a
-simple blog in no time.
-
-Designed, built, and released under MIT license by @mdo.
-
-Learn more at http://andhyde.com or https://github.com/mdo/hyde.
-
-*/
+ *  __                  __
+ * /\ \                /\ \
+ * \ \ \___   __  __   \_\ \     __
+ *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
+ *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
+ *    \ \_\ \_\/`____ \ \___,_\ \____\
+ *     \/_/\/_/`/___/> \/__,_ /\/____/
+ *                /\___/
+ *                \/__/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
+ */
 
 
+/*
+ * Contents
+ *
+ * Global resets
+ * Sidebar
+ * Container
+ * Reverse layout
+ * Themes
+ */
 
-/* Body resets
--------------------------------------------------- */
 
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
 
-html,
-body {
-  margin: 0;
-  padding: 0;
+html {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
-
-body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #454441;
-  background-color: #fff;
+@media (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
 }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 10px;
-  font-weight: 500;
-  line-height: 1.25;
-  text-rendering: optimizeLegibility;
-}
-h1 {
-  font-size: 40px;
-}
-h2 {
-  margin-top: 20px;
-  font-size: 32px;
-}
-h3 {
-  margin-top: 24px;
-  font-size: 24px;
-}
-h4, h5, h6 {
-  margin-top: 16px;
-  font-size: 16px;
-}
-
-p {
-  margin: 0 0 15px;
-}
-
-ul, ol {
-  padding: 0;
-  margin: 0 0 15px;
-}
-li {
-  color: #888580;
-}
-li ul, li ol {
-  margin-left: 25px;
-}
-
-hr {
-  position: relative;
-  margin: 40px 0;
-  border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
-}
-
-strong {
-  color: #222;
-}
-
-abbr {
-  background-color: #eee;
-  display: inline-block;
-  padding: 3px;
-  font-size: 13px;
-  font-weight: bold;
-  color: #555;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
-  text-transform: uppercase;
-  border-radius: 3px;
-}
-
-code, pre {
-  padding: 0 3px 2px;
-  font-family: Menlo, Monaco, "Courier New", monospace;
-  font-size: 14px;
-  border-radius: 3px;
-}
-code {
-  padding: 2px 4px;
-  color: #d14;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
-}
-
-pre {
-  display: block;
-  margin: 0 0 14px;
-  padding: 15px 20px;
-  line-height: 28px;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #eee;
-}
-pre code {
-  padding: 0;
-  color: inherit;
-  background-color: transparent;
-  border: 0;
-}
-.highlight {
-  margin-bottom: 15px;
-  padding: 15px;
-  border-radius: 5px;
-}
-.highlight pre {
-  margin-bottom: 0;
-}
-
-/* Quotes */
-blockquote {
-  padding: 0 0 0 20px;
-  margin: 15px 30px 15px 0;
-  border-left: 5px solid #eee;
-}
-blockquote p {
-  margin-bottom: 0;
-  color: #7a7a7a;
-  text-indent: -0.4em;
-}
-blockquote p:before {
-  content: '\201C';
-}
-blockquote p:after {
-  content: '\201D';
-}
-
-img {
-  display: block;
-  margin: 0 0 15px;
-  border-radius: 5px;
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
 }
 
 
-/* Links
--------------------------------------------------- */
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
 
-a {
-  font-weight: 600;
-  color: #16808c;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-
-/* Scaffolding
--------------------------------------------------- */
-
-/* Header */
-.masthead {
-  color: #fff;
-  background-color: #105B63;
-  box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.75);
-}
-.masthead-inner {
-  padding: 20px;
-}
-.masthead #name {
-  margin-top: 0;
-  font-family: "Berkshire Swash";
-}
-.masthead .lead {
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 0;
-}
-.masthead a {
-  color: #FFFAD5;
-}
-
-/* Footer area of masthead */
-.colophon {
-  margin-top: 20px;
-  color: #FFFAD5;
-}
-.colophon-links {
-  margin: 0 0 15px;
-  list-style: none;
-}
-
-/* Social networks area of masthead*/
-.colophon .social-networks {
+.sidebar {
   text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,.5);
+  background-color: #202020;
 }
-@media (max-width: 768px) {
- .colophon .social-networks {
-    text-align: left;
-  }
-}
-.colophon .social-networks i {
-  margin-right: 20px;
-}
-  /* Esater Egg */
-.colophon #easter_egg {
-  display: none;
-}
-.colophon #doom {
-  width: 40px;
-  margin-bottom: -10px;
-}
-
-/* Posts
--------------------------------------------------- */
-
-/* Wrapper for all posts on homepage */
-.posts, .related, .comments {
-  margin-left:  20px;
-  margin-right: 20px;
-}
-
-/* Single post */
-.post {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.post-date {
-  display: block;
-  margin: -10px 0 10px;
-  color: #9a9a9a;
-}
-
-
-/* Pagination
--------------------------------------------------- */
-
-.pagination {
-  overflow: hidden; /* clearfix */
-  margin-top: 40px;
-  font-weight: bold;
-  color: #ccc;
-  text-align: center;
-  border-top: 1px solid #eee;
-}
-.pagination a,
-.pagination span {
-  float: left;
-  width: 50%;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 20px;
-}
-.pagination a:first-child,
-.pagination span:first-child {
-  border-right: 1px solid #eee;
-}
-.pagination a:hover {
-  text-decoration: none;
-  background-color: #f5f5f5;
-}
-
-
-/* Responsive
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-  .masthead-inner {
-    padding: 40px;
-  }
-  .posts {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-}
-
-@media (min-width: 990px) {
-
-  body {
-    font-size: 18px;
-  }
-  .masthead #name {
-    font-size: 64px;
-  }
-
-  /* Center container in available real estate */
-  .container {
-    margin-left: 35%;
-    margin-right: 10%;
-    width: 55%;
-  }
-
-  /* Fix the masthead to the side for impact and awesomeness */
-  .masthead {
+@media (min-width: 48em) {
+  .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 25%;
-    margin-bottom: 0;
+    width: 18rem;
+    text-align: left;
   }
-  .masthead-inner {
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #fff;
+}
+
+/* About section */
+.sidebar-about h1 {
+  color: #fff;
+  margin-top: 0;
+  font-family: "Abril Fatface", serif;
+  font-size: 3.25rem;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  margin-bottom: 1rem;
+}
+.sidebar-nav-item {
+  display: block;
+  line-height: 1.75;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+/* Sticky sidebar
+ *
+ * Add the `sidebar-sticky` class to the sidebar's container to affix it the
+ * contents to the bottom of the sidebar in tablets and up.
+ */
+
+@media (min-width: 48em) {
+  .sidebar-sticky {
     position: absolute;
-    top: 0;
+    right:  1rem;
+    bottom: 1rem;
+    left:   1rem;
+  }
+}
+
+
+/* Container
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+.content {
+  padding-top:    4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 48em) {
+  .content {
+    max-width: 38rem;
+    margin-left: 20rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .content {
+    margin-left: 22rem;
+    margin-right: 4rem;
+  }
+}
+
+
+/*
+ * Reverse layout
+ *
+ * Flip the orientation of the page by placing the `.sidebar` on the right.
+ */
+
+@media (min-width: 48em) {
+  .layout-reverse .sidebar {
+    left: auto;
     right: 0;
-    left: 0;
   }
-  .masthead .lead {
-    font-size: 24px;
-  }
-  .colophon {
-    margin-top: 40px;
-  }
-
-  /* Remove mobile device padding from list of posts */
-  .posts {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  /* Increase space between posts */
-  .post {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-
-  /* Make pagination stand alone */
-  .pagination {
-    margin-bottom: 60px;
-    border: 1px solid #eee;
-  }
-
-}
-
-/* Customizations */
-#twitter-timeline {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 25%;
-}
-@media (max-width: 768px) {
-  #twitter-timeline {
-    margin: 0 auto;
+  .layout-reverse .content {
+    margin-left: 2rem;
+    margin-right: 20rem;
   }
 }
 
-  /*Instagram*/
-#instagram {
-  margin-top: 10px;
-}
-
-#instagram {
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-@media (max-width: 768px) {
-  #instafeed {
-    margin: 0 auto;
+@media (min-width: 64em) {
+  .layout-reverse .content {
+    margin-left: 4rem;
+    margin-right: 22rem;
   }
 }
 
-#instafeed img {
-  float: left;
-  padding-right: 20px;
+
+
+/*
+ * Themes
+ *
+ * As of v1.1, Hyde includes optional themes to color the sidebar and links
+ * within blog posts. To use, add the class of your choosing to the `body`.
+ */
+
+/* Base16 (http://chriskempson.github.io/base16/#default) */
+
+/* Red */
+.theme-base-08 .sidebar {
+  background-color: #ac4142;
+}
+.theme-base-08 .content a,
+.theme-base-08 .related-posts li a:hover {
+  color: #ac4142;
 }
 
-  /* About */
-@media (min-width: 768px) {
-  #about {
-    padding-left: 10px;
-    margin: 0 10px;
-  }
+/* Orange */
+.theme-base-09 .sidebar {
+  background-color: #d28445;
 }
-#about {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 10px;
+.theme-base-09 .content a,
+.theme-base-09 .related-posts li a:hover {
+  color: #d28445;
 }
-#about img {
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
+
+/* Yellow */
+.theme-base-0a .sidebar {
+  background-color: #f4bf75;
 }
-#about ul {
-  list-style-type: none;
+.theme-base-0a .content a,
+.theme-base-0a .related-posts li a:hover {
+  color: #f4bf75;
 }
-#about li {
-  margin-bottom: 10px;
+
+/* Green */
+.theme-base-0b .sidebar {
+  background-color: #90a959;
 }
-#about li span {
-  color: #222;
-  font-weight: 600;
+.theme-base-0b .content a,
+.theme-base-0b .related-posts li a:hover {
+  color: #90a959;
 }
-#about #links {
-  margin-top: 10px;
+
+/* Cyan */
+.theme-base-0c .sidebar {
+  background-color: #75b5aa;
 }
-#about a {
-  text-decoration: none;
+.theme-base-0c .content a,
+.theme-base-0c .related-posts li a:hover {
+  color: #75b5aa;
+}
+
+/* Blue */
+.theme-base-0d .sidebar {
+  background-color: #6a9fb5;
+}
+.theme-base-0d .content a,
+.theme-base-0d .related-posts li a:hover {
+  color: #6a9fb5;
+}
+
+/* Magenta */
+.theme-base-0e .sidebar {
+  background-color: #aa759f;
+}
+.theme-base-0e .content a,
+.theme-base-0e .related-posts li a:hover {
+  color: #aa759f;
+}
+
+/* Brown */
+.theme-base-0f .sidebar {
+  background-color: #8f5536;
+}
+.theme-base-0f .content a,
+.theme-base-0f .related-posts li a:hover {
+  color: #8f5536;
 }
