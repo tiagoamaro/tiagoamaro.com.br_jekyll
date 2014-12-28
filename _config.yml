@@ -1,8 +1,19 @@
+# Dependencies
 markdown:    kramdown
-future:      false
-exclude:     ['Gemfile', 'LICENSE', 'README']
-permalink:   pretty
 highlighter: pygments
+
+# Permalinks
+permalink:   pretty
+future:      false
+baseurl:     /
+
+# Setup
+author:
+  name:      'Tiago Amaro'
+  url:       'http://tiagoamaro.com.br'
+exclude:     ['Gemfile', 'LICENSE', 'README', 'CNAME']
 paginate:    5
+
+# Plugins
 gems:
   - jekyll-sitemap
