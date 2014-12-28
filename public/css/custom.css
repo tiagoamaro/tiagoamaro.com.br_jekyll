@@ -20,6 +20,10 @@
   font-weight: normal;
 }
 
+.sidebar-nav-item {
+  line-height: 2.0;
+}
+
   /* Social networks */
 
 .sidebar #social-networks {
@@ -41,6 +45,10 @@
 
 .content {
   max-width: 100%;
+}
+
+.content .related-posts li {
+  margin-bottom: 20px;
 }
 
 /* Instafeed and Twitter */
