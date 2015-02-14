@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selenium WebDriver - Capybara's Ugly Duckling Driver
+title: Selenium WebDriver - The Capybara Ugly Duckling Driver
 ---
 
 If you use Capybara as your acceptance test framework (`Test::Unit`, RSpec or Cucumber), you surely know that Capybara has some drivers that give you the capability to run test pages with JS functionality. Some drivers with this ability that you might know are: [`selenium-webdriver`](https://rubygems.org/gems/selenium-webdriver), [`capybara-webkit`](https://rubygems.org/gems/capybara-webkit) and [`poltergeist`](https://rubygems.org/gems/poltergeist).
