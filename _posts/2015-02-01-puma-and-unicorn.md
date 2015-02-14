@@ -50,4 +50,39 @@ Puma have its own solution for `init.d` and Upstart solution. They call it [Jung
 
 If you are starting a new project and want to ease up the server configuration process, go with Puma. With my past experience (and traumas), having a modern server that is easy to configure is really the way to go if you don't want headaches.
 
-> PS: I'm trying to get time to replace Unicorn for Puma in some of my company projects. When (or if) I do that, I'll post the results here.
+> PS: I'm trying to get time to replace Unicorn for Puma in some of my work projects. When (or if) I do that, I'll post the results here.
+
+## Update - Results (13/02/2015)
+
+I've replaced successfully one of the projects from my work, using the Puma related gems described in this post. The transition was made following these steps:
+
+1. Changing Capistrano recipes (using the `capistrano-puma` gem)
+2. Updating upstart scripts
+3. Choosing Puma strategy (workers or multi-threaded. I chose multi-workers with phased-restart strategy, for real zero downtime and no request hangs)
+
+With these three simple steps, I was able to replace a buggy Unicorn upstart script and an unfriendly configuration environment for the production machines, easing up my future job on scaling horizontally this project.
+
+I've only found a caveat on the default puma configuration: configuring a zero minimum threads for the Puma workers was causing Puma threads to open many connections to my database and not closing them. The solution was setting the min threads and max threads to the same value, as describe on the [Puma configuration file example](https://github.com/codetriage/codetriage/blob/ebd5c8f3667626e91cf2594a0e840e12507bf109/config/puma.rb) [referenced on the Heroku article](https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server#sample-code)
+
+Currently, my puma configuration is like this:
+
+```ruby
+directory '/sample_folder/current'
+rackup "/sample_folder/current/config.ru"
+environment 'production'
+
+pidfile "/sample_folder/shared/tmp/pids/puma.pid"
+state_path "/sample_folder/shared/tmp/pids/puma.state"
+stdout_redirect '/sample_folder/shared/log/puma_access.log', '/sample_folder/shared/log/puma_error.log', true
+
+threads 5,5 # Min-max threads set to the same value
+
+bind 'unix:///sample_folder/shared/tmp/sockets/puma.sock'
+workers 2 # Workers strategy
+
+preload_app!
+
+on_worker_boot do
+  ActiveRecord::Base.establish_connection
+end
+```
