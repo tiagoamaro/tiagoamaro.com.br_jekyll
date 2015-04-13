@@ -9,14 +9,12 @@ So ok, you can install the gem in your global gemset of your current Ruby versio
 
 This gist will help you install any gem you like within the global scopes of your rubies in your RVM environment.
 
-{% gist 6f39c056f57c5b75e801 %}
+{% gist 6f39c056f57c5b75e801 "globally_install_gems.sh" %}
 
 ## Example
 
 If you want to install many versions of Nokogiri at once, use the following command:
 
-```bash
-GEM_NAME=nokogiri GEM_VERSION=1.6.6.2 ./globally_install_gems.sh & GEM_NAME=nokogiri GEM_VERSION=1.6.6.1 ./globally_install_gems.sh & GEM_NAME=nokogiri GEM_VERSION=1.6.5 ./globally_install_gems.sh & GEM_NAME=nokogiri GEM_VERSION=1.6.4.1 ./globally_install_gems.sh & GEM_NAME=nokogiri GEM_VERSION=1.6.4 ./globally_install_gems.sh &
-```
+{% gist 6f39c056f57c5b75e801 "example.sh" %}
 
 **Warning!** This will surely cause a 100% CPU and a laggy machine!!!
