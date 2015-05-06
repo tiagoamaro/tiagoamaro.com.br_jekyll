@@ -9,9 +9,9 @@ GEM
     coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.1)
+    coffee-script-source (1.9.1.1)
     colorator (0.1)
-    execjs (2.5.0)
+    execjs (2.5.2)
     fast-stemmer (1.0.2)
     ffi (1.9.8)
     hitimes (1.2.2)
@@ -39,7 +39,7 @@ GEM
     jekyll-sitemap (0.8.1)
     jekyll-watch (1.2.1)
       listen (~> 2.7)
-    kramdown (1.6.0)
+    kramdown (1.7.0)
     liquid (2.6.2)
     listen (2.10.0)
       celluloid (~> 0.16.0)
