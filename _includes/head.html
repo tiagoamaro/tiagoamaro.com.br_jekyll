@@ -3,7 +3,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <!-- Meta SEO -->
-  <meta name="description" content="Tiago Amaro personal website. Developer and Geek.">
+  {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt | truncate:160 | strip_html }}">
+  {% else %}
+    <meta name="description" content="Tiago Amaro personal website. Developer and Geek.">
+  {% endif %}
 
   <title>
     {% if page.title %}{{ page.title }} | {% endif %}
