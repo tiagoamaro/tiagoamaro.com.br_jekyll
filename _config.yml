@@ -1,7 +1,3 @@
-# Dependencies
-markdown:    redcarpet
-highlighter: pygments
-
 # Permalinks
 permalink:   pretty
 future:      false
@@ -16,4 +12,6 @@ paginate:    5
 
 # Plugins
 gems:
+  - jekyll-gist
+  - jekyll-paginate
   - jekyll-sitemap

@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'kramdown'
 gem 'jekyll-sitemap'
+gem 'jekyll-paginate'
 
 # jekyll-gist 1.3.x uses internet connection to generate the "noscript" tags
 # In the meantime, using version 1.2.1.
