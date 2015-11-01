@@ -1,3 +1,6 @@
+# Conversion
+markdown:    kramdown
+
 # Permalinks
 permalink:   pretty
 future:      false
@@ -12,3 +15,9 @@ gems:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
+
+
+# Markdown renderers
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

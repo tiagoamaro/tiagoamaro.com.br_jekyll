@@ -38,7 +38,7 @@ This extension was called zen-coding, and there was a strong motive for that. It
 
 *Example*: The snippet `#container>ul.dottet>li*3` will create the following HTML:
 
-```
+```html
 <div id="container">
   <ul class="dottet">
     <li></li>
