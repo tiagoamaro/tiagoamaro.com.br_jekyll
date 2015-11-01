@@ -4,9 +4,6 @@ future:      false
 baseurl:     /
 
 # Setup
-author:
-  name:      'Tiago Amaro'
-  url:       'http://tiagoamaro.com.br'
 exclude:     ['Gemfile', 'LICENSE', 'README', 'CNAME']
 paginate:    5
 
