@@ -15,3 +15,6 @@ gems:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
+
+gist:
+  noscript: false
