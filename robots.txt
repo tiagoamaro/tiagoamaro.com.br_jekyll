@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://tiagoamaro.com.br/sitemap.xml
+Sitemap: https://www.tiagoamaro.com.br/sitemap.xml

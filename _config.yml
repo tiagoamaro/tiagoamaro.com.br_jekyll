@@ -5,7 +5,7 @@ markdown:    redcarpet
 permalink:   pretty
 future:      false
 baseurl:     ''
-url:         https://tiagoamaro.com.br
+url:         https://www.tiagoamaro.com.br
 
 # Setup
 exclude:     ['Gemfile', 'LICENSE', 'README', 'CNAME']
