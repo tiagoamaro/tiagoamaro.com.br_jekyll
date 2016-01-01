@@ -44,7 +44,10 @@
 }
 
 #easter_egg {
+  background-image: url(/public/images/doom_marine.gif);
   display: none;
+  height: 32px;
+  width: 28px;
 }
 
 /* Content */
