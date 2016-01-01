@@ -24,6 +24,12 @@
   line-height: 2.0;
 }
 
+/* Icons */
+
+.icon-2x {
+  font-size: 2em;
+}
+
   /* Social networks */
 
 .sidebar #social-networks {
