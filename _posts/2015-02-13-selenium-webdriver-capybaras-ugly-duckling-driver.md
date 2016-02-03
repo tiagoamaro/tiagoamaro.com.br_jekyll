@@ -31,17 +31,17 @@ If you want to change this value, you should set the `Capybara.javascript_driver
 
 To do that, you could overwrite the default `:selenium` driver, but here, I'll be creating a new Capybara driver just for chrome:
 
-```ruby
+{% highlight ruby %}
 Capybara.register_driver :chrome do |app|
   Capybara::Selenium::Driver.new(app, :browser => :chrome)
 end
-```
+{% endhighlight %}
 
 After that, just set the `javascript_driver` to use your newly created `:chrome` driver:
 
-```ruby
+{% highlight ruby %}
 Capybara.javascript_driver = :chrome
-```
+{% endhighlight %}
 
 > If you are willing to use Chrome as your webdriver, remember to install [`ChromeDriver`](https://code.google.com/p/selenium/wiki/ChromeDriver) on your machine, otherwise, Selenium will not be able to communicate with your Chrome installation. On OSX, just run `brew install chromedriver` and you are ready to go.
 
@@ -53,8 +53,8 @@ On RSpec, Capybara allows you to choose which driver you want to run using the e
 
 This is very useful if you are debugging a mysterious failing spec. On that spec, you could do this:
 
-```ruby
+{% highlight ruby %}
 scenario 'my mysterious spec', :js, :driver => :chrome do
   # ...
 end
-```
+{% endhighlight %}

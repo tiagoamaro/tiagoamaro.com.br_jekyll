@@ -10,7 +10,7 @@ I was a bit tired on running this every time I installed a new ruby or created a
 
 Here's the bash script:
 
-```bash
+{% highlight bash %}
 BUNDLER_IN_GEM_LIST=`gem list | grep '^bundler\s' | wc -l`
 
 if [ $BUNDLER_IN_GEM_LIST -eq "0" ]
@@ -18,16 +18,16 @@ then
     echo "No bundler detected, executing \"gem install bundler\""
     gem install bundler
 fi
-```
+{% endhighlight %}
 
 Just pick this script and save on the `~/.rvm/hooks` folder with the `after_use_[any name you like]` pattern, and make it executable.
 
 Example:
 
-```bash
+{% highlight bash %}
 cd ~/.rvm/hooks # Go to RVM hook's folder
 vim after_use_install_bundler_if_necessary # Copy and paste the script content and save it
 chmod +x after_use_install_bundler_if_necessary # Make it executable
-```
+{% endhighlight %}
 
 After this, every time RVM execute a "use" command (cd to a project folder with `.ruby-version`/`.ruby-gemset` files or explicitly running `rvm use`), it'll install bundler if that's not detected.

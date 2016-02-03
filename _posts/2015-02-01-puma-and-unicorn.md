@@ -66,7 +66,7 @@ I've only found a caveat on the default puma configuration: configuring a zero m
 
 Currently, my puma configuration is like this:
 
-```ruby
+{% highlight ruby %}
 directory '/sample_folder/current'
 rackup "/sample_folder/current/config.ru"
 environment 'production'
@@ -85,4 +85,5 @@ preload_app!
 on_worker_boot do
   ActiveRecord::Base.establish_connection
 end
-```
+{% endhighlight %}
+

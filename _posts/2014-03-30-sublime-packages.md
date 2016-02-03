@@ -38,7 +38,7 @@ This extension was called zen-coding, and there was a strong motive for that. It
 
 *Example*: The snippet `#container>ul.dottet>li*3` will create the following HTML:
 
-```html
+{% highlight html %}
 <div id="container">
   <ul class="dottet">
     <li></li>
@@ -46,7 +46,7 @@ This extension was called zen-coding, and there was a strong motive for that. It
     <li></li>
   </ul>
 </div>
-```
+{% endhighlight %}
 
 * [HTML-CSS-JS Prettify](https://sublime.wbond.net/packages/HTML-CSS-JS%20Prettify)
 

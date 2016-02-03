@@ -19,7 +19,7 @@ When I need to show my localhost to the world, I use the [defunctzombie/localtun
 
 If you always wanted that, you were asking for [pry](https://github.com/pry/pry). Every Ruby dev knows about it, and should know about it. It is a powerful shell for Ruby that can be binded anywhere in your code.
 
-Tip: Remember to check the [pry wiki](https://github.com/pry/pry/wiki/Source-browsing#wiki-Show_method) for the ```show-source``` and ```show-method```. This was a great tip from [grillorafael](https://github.com/grillorafael).
+Tip: Remember to check the [pry wiki](https://github.com/pry/pry/wiki/Source-browsing#wiki-Show_method) for the `show-source` and `show-method`. This was a great tip from [grillorafael](https://github.com/grillorafael).
 
 * reek
 
@@ -35,7 +35,7 @@ Tip: Remember to check the [pry wiki](https://github.com/pry/pry/wiki/Source-bro
 
 It is true that Rails 4 introduced a new and friendlier error interface for our development environments, but it can't be compared to [charliesome/better_errors](https://github.com/charliesome/better_errors).
 
-This Gem introduces a great error interface. It allows you to debug your errors and interact within the error context (if you add the ```binding_of_caller``` Gem, as described in the [better_errors installation guide](https://github.com/charliesome/better_errors#installation))
+This Gem introduces a great error interface. It allows you to debug your errors and interact within the error context (if you add the `binding_of_caller` Gem, as described in the [better_errors installation guide](https://github.com/charliesome/better_errors#installation))
 
 * rack-mini-profiler
 
