@@ -6,10 +6,10 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
 
   <span class="post-date">{{ page.date | date_to_string }}</span>
-  <span class="twitter">{% include twitter_button.html %}</span>
-
   {{ content }}
 </div>
+
+<span class="twitter">{% include twitter_button.html %}</span>
 
 <div class="disqus">
   {% include disqus.html %}
