@@ -62,8 +62,8 @@
 
 /* Instafeed and Twitter */
 
-#twitter-timeline .twitter-timeline {
-  width: 100% !important;
+#twitter-timeline {
+  text-align: center;
 }
 
 #instafeed a {
