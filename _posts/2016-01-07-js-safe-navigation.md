@@ -18,3 +18,9 @@ I've studied the benchmark behind those functions and here are my results:
 Conclusion: as expected, the simplest approach (Boolean + short circuit) is the fastest one, but it's just impossible to repeat your object + properties over and over.
 
 I would suggest to use Joe Gornick's implementation, as it's quite fast and it has a nice API as well.
+
+## Update (12/03/2016)
+
+I created a repository where you can just clone and run `npm install && node app.js` to run this benchmark.
+
+Here's the link: [https://github.com/tiagoamaro/js_safe_nav_benchmark](https://github.com/tiagoamaro/js_safe_nav_benchmark)
