@@ -1,3 +1,13 @@
+/* Overrides */
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
 /* Themes */
 
 .theme-base-10 .sidebar {
