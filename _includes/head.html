@@ -1,36 +1,31 @@
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <!-- Meta SEO -->
-  {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt | truncate:160 | strip_html }}">
-  {% else %}
-    <meta name="description" content="Tiago Amaro personal website. Geek, Programmer, Explainer wannabe. Twitter: @tiagopadrela">
-  {% endif %}
+<!-- Meta SEO -->
+{% if page.excerpt %}
+<meta name="description" content="{{ page.excerpt | truncate:160 | strip_html }}">
+{% else %}
+<meta name="description"
+      content="Tiago Amaro personal website. Geek, Programmer, Explainer wannabe. Twitter: @tiagopadrela">
+{% endif %}
 
-  <title>
-    {% if page.title %}{{ page.title }} | {% endif %}
-    Tiago Amaro
-  </title>
+<title>
+  {% if page.title %}{{ page.title }} | {% endif %}
+  Tiago Amaro
+</title>
 
-  <!-- JS -->
-  <script src="https://npmcdn.com/cheet.js@0.3.3/cheet.min.js"></script>
-  <script src="/public/js/easter_egg.js"></script>
-  <script src="/public/js/google_analytics.js"></script>
+<!-- JS -->
+<script src="/public/js/google_analytics.js"></script>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/hyde.css">
-  <link rel="stylesheet" href="/public/css/custom.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash">
+<!-- CSS -->
+<link rel="stylesheet" href="/public/css/syntax.css">
+<link rel="stylesheet" href="/public/css/theme.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash">
 
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicons/touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicons/favicon.png">
+<!-- Icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicons/touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/public/favicons/favicon.png">
 
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-</head>
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
