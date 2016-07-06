@@ -34,6 +34,31 @@ a:hover {
   line-height: 2.0;
 }
 
+/* Sidebar Responsive */
+
+.sidebar .mobile-menu-arrow {
+  display: none;
+}
+
+@media (max-width: 48em) {
+  .sidebar .sidebar-nav,
+  .sidebar .sidebar-copyright,
+  .sidebar .social-networks {
+    display: none;
+  }
+
+  .sidebar .sidebar-nav.show-mobile,
+  .sidebar .sidebar-copyright.show-mobile,
+  .sidebar .social-networks.show-mobile {
+    display: block;
+  }
+
+  .sidebar .mobile-menu-arrow {
+    cursor: pointer; /* Who knows... */
+    display: block;
+  }
+}
+
 /* Icons */
 
 .icon-2x {
@@ -42,14 +67,14 @@ a:hover {
 
   /* Social networks */
 
-.sidebar #social-networks {
+.sidebar .social-networks {
   text-align: center;
 }
-.sidebar #social-networks a {
+.sidebar .social-networks a {
   margin-right: 10px;
   text-decoration: none;
 }
-.sidebar #social-networks img {
+.sidebar .social-networks img {
   margin: 0;
 }
 

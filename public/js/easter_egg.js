@@ -1,3 +1,5 @@
+"use strict";
+
 // Show Easter egg
 
 var show_marine = function() { document.getElementById('easter_egg').style.display = "inline-block"; };
