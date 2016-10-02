@@ -19,3 +19,7 @@ gems:
 
 gist:
   noscript: false
+
+sass:
+  sass_dir: _scss
+  style: compressed

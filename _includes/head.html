@@ -21,10 +21,15 @@
   <script src="/public/js/google_analytics.js" async="true"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/hyde.css">
-  <link rel="stylesheet" href="/public/css/custom.css">
+
+  <!-- Thank you so much to Garth Braithwaite (http://garthdb.com/writings/i-am-a-jekyll-god/) -->
+  <style type="text/css">
+    {% capture include_to_scssify %}
+      {% include style.scss %}
+    {% endcapture %}
+    {{ include_to_scssify | scssify }}
+  </style>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash">
 
