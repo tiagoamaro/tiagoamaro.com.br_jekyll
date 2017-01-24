@@ -21,13 +21,13 @@ layout: default
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | append: '/' }}" class="pagination-item">Older</a>
+    <a href="{{ paginator.next_page_path }}" class="pagination-item">Older</a>
   {% else %}
     <span class="pagination-item">Older</span>
   {% endif %}
 
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | append: '/' }}" class="pagination-item">Newer</a>
+    <a href="{{ paginator.previous_page_path }}" class="pagination-item">Newer</a>
   {% else %}
     <span class="pagination-item">Newer</span>
   {% endif %}
