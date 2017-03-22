@@ -8,7 +8,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
-    jekyll (3.4.2)
+    jekyll (3.4.3)
       addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -60,4 +60,4 @@ DEPENDENCIES
   jekyll-sitemap
 
 BUNDLED WITH
-   1.14.4
+   1.14.6
