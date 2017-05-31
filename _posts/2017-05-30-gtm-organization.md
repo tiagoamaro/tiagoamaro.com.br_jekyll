@@ -3,9 +3,9 @@ title: Google Tag Manager Organization Tips
 layout: post
 ---
 
-> TL;DR [here's a quick link to the organization tips, so you can jump the introduction :)](#tips)
-
 Everybody loves data. Analyzing data allows you to understand what's going around with your application/business, it being performance (Skylight, NewRelic), user experience (Hotjar) or marketing purposes (Google Analytics, Google Tag Manager).
+
+> TL;DR [here's a quick link to the organization tips, so you can jump the introduction :)](#tips)
 
 As developers know, marketing teams usually make an insane number of requests to add several tracking pixels on applications. I once worked in a company which had more than 60 tracking pixels being reported by my ad-blocker, and all of these tracking pixels were hardcoded on several templates. This inherited codebase was a classic case of "big ball of mud".
 
