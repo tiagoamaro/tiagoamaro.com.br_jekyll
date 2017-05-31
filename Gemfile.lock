@@ -45,7 +45,7 @@ GEM
       ffi (>= 0.5.0)
     rouge (1.11.1)
     safe_yaml (1.0.4)
-    sass (3.4.23)
+    sass (3.4.24)
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
@@ -60,4 +60,4 @@ DEPENDENCIES
   jekyll-sitemap
 
 BUNDLED WITH
-   1.14.6
+   1.15.0
