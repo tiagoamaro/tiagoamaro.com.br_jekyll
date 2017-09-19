@@ -12,7 +12,7 @@ exclude:     ['Gemfile', 'LICENSE', 'README', 'CNAME']
 paginate:    5
 
 # Plugins
-gems:
+plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
