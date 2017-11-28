@@ -15,8 +15,8 @@ A small collection of gems and tricks I use for measuring and enhancing a Rails 
 
 # Tips
 
-- Use `Rack::Deflater` (Source: https://schneems.com/2017/11/08/80-smaller-rails-footprint-with-rack-deflate/)
+- Use `Rack::Deflater` ([Original post. Thanks Schneeman!](https://schneems.com/2017/11/08/80-smaller-rails-footprint-with-rack-deflate/))
 
-This tip is incredible (thanks Schneeman!). It just uses a Rack stdlib to compress your HTML.
+This tip is incredible! It just uses a Rack stdlib to compress your HTML.
 
-Just add the `config.middleware.insert_after ActionDispatch::Static, Rack::Deflater` line on your `config/application.rb`, and voilà!
+Add the `config.middleware.insert_after ActionDispatch::Static, Rack::Deflater` line on your `config/application.rb`, and voilà!
