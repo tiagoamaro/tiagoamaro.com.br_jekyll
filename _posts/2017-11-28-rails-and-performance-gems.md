@@ -3,7 +3,7 @@ title: Rails Performance Gems and Tricks
 layout: post
 ---
 
-A small collection of gems and tricks I use for measuring and enhancing a Rails app performance. I'll keep 
+A small collection of gems and tricks I use for measuring and enhancing a Rails app performance. I'll keep this post updated with new gems and tricks :)
 
 # Gems
 
