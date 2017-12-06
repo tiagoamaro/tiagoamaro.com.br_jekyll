@@ -21,3 +21,7 @@ A small collection of gems and tricks I use for measuring and enhancing a Rails 
 This tip is incredible! It just uses a Rack stdlib to compress your HTML.
 
 Add the `config.middleware.insert_after ActionDispatch::Static, Rack::Deflater` line on your `config/application.rb`, and voilà!
+
+- Set a reasonable `MALLOC_ARENA_MAX` if you have memory bloat ([Original post. Thanks Nate!](https://www.speedshop.co/2017/12/04/malloc-doubles-ruby-memory.html))
+
+Ruby memory allocation can be tricky, as this post is a very deep analysis on what's going on behind the curtains.
