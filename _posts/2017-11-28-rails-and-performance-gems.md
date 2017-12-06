@@ -7,12 +7,12 @@ A small collection of gems and tricks I use for measuring and enhancing a Rails 
 
 # Gems
 
-- (Benchmark) [rack-mini-profiler](https://github.com/MiniProfiler/rack-mini-profiler). Profiler for your development and production Ruby rack apps.
-- (Benchmark) [derailed_benchmarks](https://github.com/schneems/derailed_benchmarks). Benchmarks for your whole Rails app.
+- (Benchmark) [rack-mini-profiler](https://github.com/MiniProfiler/rack-mini-profiler). Profiler for your development and production Ruby rack apps
+- (Benchmark) [derailed_benchmarks](https://github.com/schneems/derailed_benchmarks). Benchmarks for your whole Rails app
 - (Cache) [bootsnap](https://github.com/Shopify/bootsnap). Boot large Ruby/Rails apps faster
-- (Database/Queries) [bullet](https://github.com/flyerhzm/bullet). Easy detecting N+1 queries.
+- (Database/Queries) [bullet](https://github.com/flyerhzm/bullet). Easy detecting N+1 queries
 - (Database/Queries) [ankane/dexter](https://github.com/ankane/dexter). The automatic indexer for Postgres
-- (Heroku only) [heroku-deflater](https://github.com/romanbsd/heroku-deflater). Add the gem on the production group and enjoy gziped served assets.
+- (Heroku only) [heroku-deflater](https://github.com/romanbsd/heroku-deflater). Add the gem on the production group and enjoy gziped served assets
 
 # Tips
 
