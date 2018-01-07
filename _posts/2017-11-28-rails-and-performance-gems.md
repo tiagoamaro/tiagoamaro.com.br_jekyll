@@ -8,6 +8,7 @@ A small collection of gems and tricks I use for measuring and enhancing a Rails 
 # Gems
 
 - (Benchmark) [rack-mini-profiler](https://github.com/MiniProfiler/rack-mini-profiler). Profiler for your development and production Ruby rack apps
+- (Benchmark) [ruby-prof](https://github.com/ruby-prof/ruby-prof). A code profiler for MRI rubies (Thanks [Ana María](https://twitter.com/anamma_06)!)
 - (Benchmark) [derailed_benchmarks](https://github.com/schneems/derailed_benchmarks). Benchmarks for your whole Rails app
 - (Cache) [bootsnap](https://github.com/Shopify/bootsnap). Boot large Ruby/Rails apps faster
 - (Database/Queries) [bullet](https://github.com/flyerhzm/bullet). Easy detecting N+1 queries
