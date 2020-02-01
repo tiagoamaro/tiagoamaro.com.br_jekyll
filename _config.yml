@@ -9,12 +9,10 @@ url:         https://www.tiagoamaro.com.br
 
 # Setup
 exclude:     ['Gemfile', 'LICENSE', 'README', 'CNAME']
-paginate:    5
 
 # Plugins
 plugins:
   - jekyll-gist
-  - jekyll-paginate
   - jekyll-sitemap
 
 gist:
