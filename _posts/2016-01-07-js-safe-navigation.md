@@ -24,3 +24,7 @@ I would suggest to use Joe Gornick's implementation, as it's quite fast and it h
 I created a repository where you can just clone and run `npm install && node app.js` to run this benchmark.
 
 Here's the link: [https://github.com/tiagoamaro/js_safe_nav_benchmark](https://github.com/tiagoamaro/js_safe_nav_benchmark)
+
+## Update (02/04/2020)
+
+It seems ES2020 got this feature out of the box: optional chaining! https://v8.dev/features/optional-chaining
