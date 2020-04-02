@@ -21,7 +21,7 @@ I would suggest to use Joe Gornick's implementation, as it's quite fast and it h
 
 ## Update (12/03/2016)
 
-I created a repository where you can just clone and run `npm install && node app.js` to run this benchmark.
+I created a repository where you can just clone and run `npm install && npm run benchmark` to run this benchmark.
 
 Here's the link: [https://github.com/tiagoamaro/js_safe_nav_benchmark](https://github.com/tiagoamaro/js_safe_nav_benchmark)
 
