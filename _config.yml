@@ -14,6 +14,7 @@ exclude:     ['Gemfile', 'LICENSE', 'README', 'CNAME']
 plugins:
   - jekyll-gist
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 gist:
   noscript: false
