@@ -46,14 +46,12 @@ a:hover {
 
 @media (max-width: 48em) {
   .sidebar .sidebar-nav,
-  .sidebar .sidebar-copyright,
-  .sidebar .social-networks {
+  .sidebar .sidebar-copyright {
     display: none;
   }
 
   .sidebar .sidebar-nav.show-mobile,
-  .sidebar .sidebar-copyright.show-mobile,
-  .sidebar .social-networks.show-mobile {
+  .sidebar .sidebar-copyright.show-mobile {
     display: block;
   }
 
@@ -67,19 +65,6 @@ a:hover {
 
 .icon-2x {
   font-size: 2em;
-}
-
-  /* Social networks */
-
-.sidebar .social-networks {
-  text-align: center;
-}
-.sidebar .social-networks a {
-  margin-right: 10px;
-  text-decoration: none;
-}
-.sidebar .social-networks img {
-  margin: 0;
 }
 
 #easter_egg {
