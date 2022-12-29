@@ -37,22 +37,27 @@ let MastodonApi = function (params_) {
   this.getToots();
 
   // Toot interactions
-  this.mtIdContainer.addEventListener("click", function (event) {
-    let urlToot = event.target.closest(".mt-toot").dataset.location;
-    // Open Toot in new page avoiding any other natural link
-    if (
-      event.target.localName != "a" &&
-      event.target.localName != "span" &&
-      urlToot
-    ) {
-      window.open(urlToot, "_blank");
-    }
-  });
+  this.mtIdContainer &&
+    this.mtIdContainer.addEventListener("click", function (event) {
+      let urlToot = event.target.closest(".mt-toot").dataset.location;
+      // Open Toot in new page avoiding any other natural link
+      if (
+        event.target.localName != "a" &&
+        event.target.localName != "span" &&
+        urlToot
+      ) {
+        window.open(urlToot, "_blank");
+      }
+    });
 };
 
 // Listing toots function
 MastodonApi.prototype.getToots = function () {
   let mapi = this;
+
+  if (this.mtBodyContainer === null) {
+    return;
+  }
 
   // Get request
   fetch(
