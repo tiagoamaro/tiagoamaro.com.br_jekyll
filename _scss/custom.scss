@@ -42,6 +42,19 @@ a:hover {
 
 .sidebar .mobile-menu-arrow {
   display: none;
+  margin: 0 auto;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  width: 16px;
+  height: 16px;
+}
+
+.sidebar .mobile-menu-arrow-down {
+  transform: rotate(225deg);
+}
+
+.sidebar .mobile-menu-arrow-up {
+  transform: rotate(45deg);
 }
 
 @media (max-width: 48em) {
