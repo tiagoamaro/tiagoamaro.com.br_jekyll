@@ -10,6 +10,9 @@ url:         https://tiagoamaro.com.br
 # Setup
 exclude:     ['Gemfile', 'LICENSE', 'README', 'CNAME']
 
+# Jekyll SEO tag
+title: "Tiago Padrela Amaro"
+
 # Plugins
 plugins:
   - jekyll-gist
