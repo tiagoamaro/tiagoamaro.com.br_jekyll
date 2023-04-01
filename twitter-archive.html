@@ -1,0 +1,63 @@
+---
+layout: page
+title: Twitter archive
+---
+
+<div id="twitter-archive"></div>
+<div id="loading" style="display: none;">Loading...</div>
+<button id="load-tweets-button" onclick="javascript:loadTweets()">Load tweets</button>
+
+<script>
+    function loadTweets() {
+        const loadingDiv = document.getElementById('loading');
+
+        const loadTweets = new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = '/public/js/twitter/data/tweets.js';
+            document.body.appendChild(script);
+            resolve();
+        });
+
+        const waitForTweets = new Promise((resolve, reject) => {
+            const interval = setInterval(() => {
+                if (window.tweets) {
+                    clearInterval(interval);
+                    resolve();
+                }
+            }, 500);
+        });
+
+        loadTweets
+            .then(() => {
+                loadingDiv.style.display = 'block'
+            }).then(() => {
+                const button = document.getElementById('load-tweets-button');
+                button.style.display = 'none';
+            })
+            .then(() => waitForTweets)
+            .then(() => {
+                const tweetsDiv = document.getElementById('twitter-archive');
+                const tweets = window.tweets;
+                tweets.forEach(tweet => {
+                    const {
+                        tweet: {
+                            created_at: createdAt,
+                            full_text: fullText
+                        }
+                    } = tweet;
+                    const tweetDiv = document.createElement('div');
+
+                    const tweetText = `
+                        created at: ${createdAt}: <br>
+                        ${fullText}
+                    `
+
+                    tweetDiv.innerHTML = tweetText;
+                    tweetsDiv.appendChild(tweetDiv);
+                    tweetDiv.appendChild(document.createElement('hr'));
+                });
+            }).then(() => {
+                loadingDiv.style.display = 'none';
+            })
+    }
+</script>
