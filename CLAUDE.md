@@ -8,12 +8,17 @@ theme extensions, unless explicitly approved.
 
 ## Do not touch: third-party / vendored CSS
 
-`_scss/mastodon-timeline.scss` styles the Mastodon embed feed timeline widget
-(<https://gitlab.com/idotj/mastodon-embed-feed-timeline>). Its classnames
-(`mt-timeline`, `mt-body`, `mt-toot`, `loading-spinner`, etc.) are injected
-dynamically by `public/js/mastodon_timeline.js`, also vendored third-party
-code. Do not convert this file to Tailwind or otherwise touch it during the
-migration — it's external, not site-authored CSS.
+`public/js/emfed/toots.css` styles the Mastodon feed embed
+(<https://github.com/sampsyo/emfed>, replaced the old
+`idotj/mastodon-embed-feed-timeline` widget on 2026-08-09 — same client-side,
+live-fetch approach, more stars, DOMPurify-sanitized toot HTML). Its
+classnames (`.toots`, `.toot`, `.user`, `.avatar`, etc.) are injected
+dynamically by `public/js/emfed/emfed.js` + `core.js` + `client.js`, also
+vendored third-party code, plus vendored dependency
+`public/js/emfed/dompurify.mjs` (resolved via an import map in
+`_includes/javascript.html`). Do not convert `toots.css` to Tailwind or
+otherwise touch these files during the migration — they're external, not
+site-authored code.
 
 ## Migration steps taken so far
 
