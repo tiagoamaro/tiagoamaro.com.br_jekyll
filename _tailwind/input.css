@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Brand wordmark font, loaded via Google Fonts in head.html */
+@theme {
+  --font-brand: "Berkshire Swash", serif;
+}
+
 /*
  * Base typography for markdown-rendered content (post/page bodies, kramdown
  * output). These are raw tags with no class attributes, so utility classes
