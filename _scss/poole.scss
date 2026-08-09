@@ -253,18 +253,6 @@ tbody tr:nth-child(odd) th {
 
 
 /*
- * Custom type
- *
- * Extend paragraphs with `.lead` for larger introductory text.
- */
-
-.lead {
-  font-size: 1.25rem;
-  font-weight: 300;
-}
-
-
-/*
  * Messages
  *
  * Show alert messages to users. You may add it to single elements like a `<p>`,
@@ -279,19 +267,6 @@ tbody tr:nth-child(odd) th {
 }
 
 
-/*
- * Container
- *
- * Center the page content.
- */
-
-.container {
-  max-width: 38rem;
-  padding-left:  1rem;
-  padding-right: 1rem;
-  margin-left:  auto;
-  margin-right: auto;
-}
 
 
 /*

@@ -10,81 +10,15 @@ a:hover {
 
 /* Themes */
 
-.theme-base-10 .sidebar {
-  background-color: #105B63;
-  color: #FFFAD5;
-}
 .theme-base-10 .content a,
 .theme-base-10 .related-posts li a:hover {
   color: #105B63;
-}
-
-/* Sidebar */
-
-.sidebar-sticky {
-  top: 1rem;
-}
-
-.sidebar h1 {
-  font-family: 'Berkshire Swash', serif;
-  font-weight: normal;
-}
-
-.sidebar-nav-item {
-  line-height: 2.0;
-}
-
-.sidebar .devto-logo {
-  fill: white;
-}
-
-/* Sidebar Responsive */
-
-.sidebar .mobile-menu-arrow {
-  display: none;
-  margin: 0 auto;
-  border-bottom: 2px solid #ffffff;
-  border-right: 2px solid #ffffff;
-  width: 16px;
-  height: 16px;
-}
-
-.sidebar .mobile-menu-arrow-down {
-  transform: rotate(225deg);
-}
-
-.sidebar .mobile-menu-arrow-up {
-  transform: rotate(45deg);
-}
-
-@media (max-width: 48em) {
-  .sidebar .sidebar-nav,
-  .sidebar .sidebar-copyright {
-    display: none;
-  }
-
-  .sidebar .sidebar-nav.show-mobile,
-  .sidebar .sidebar-copyright.show-mobile {
-    display: block;
-  }
-
-  .sidebar .mobile-menu-arrow {
-    cursor: pointer; /* Who knows... */
-    display: block;
-  }
 }
 
 /* Icons */
 
 .icon-2x {
   font-size: 2em;
-}
-
-#easter_egg {
-  background-image: url(/public/images/doom_marine.gif);
-  display: none;
-  height: 32px;
-  width: 28px;
 }
 
 /* Content */

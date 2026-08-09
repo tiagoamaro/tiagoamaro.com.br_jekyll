@@ -1,12 +1,12 @@
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>Tiago Padrela Amaro</h1>
-      <p class="lead">Geek and coder</p>
+<div class="sidebar bg-teal-800 px-4 py-8 text-center text-amber-50 md:fixed md:inset-y-0 md:left-0 md:w-72 md:text-left">
+  <div class="mx-auto max-w-xl px-4 md:absolute md:inset-4">
+    <div>
+      <h1 class="mt-0 font-serif text-5xl font-normal text-white">Tiago Padrela Amaro</h1>
+      <p class="text-xl font-light">Geek and coder</p>
     </div>
 
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item {% if page.url == "/" %}active{% endif %}" href="/">Home</a>
+    <nav class="sidebar-nav mb-4 hidden md:block">
+      <a class="block leading-loose text-amber-50 hover:text-amber-400 focus:text-amber-400 hover:underline focus:underline {% if page.url == "/" %}font-bold{% endif %}" href="/">Home</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -17,20 +17,20 @@
       {% for node in pages_list %}
         {% if node.title != null %}
           {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+            <a class="block leading-loose text-amber-50 hover:text-amber-400 focus:text-amber-400 hover:underline focus:underline{% if page.url == node.url %} font-bold{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
           {% endif %}
         {% endif %}
       {% endfor %}
     </nav>
 
-    <p class="sidebar-copyright">
+    <p class="sidebar-copyright hidden md:block">
       <small>
-        &copy; {{ site.time | date: '%Y' }}. Built with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/poole/hyde" target="_blank">Hyde</a>. Hosted with <span class="fa fa-heart-o"></span> on <a href="http://pages.github.com/" target="_blank">Github Pages</a>.
+        &copy; {{ site.time | date: '%Y' }}. Built with <a class="text-amber-50 hover:text-amber-400" href="http://jekyllrb.com/" target="_blank">Jekyll</a> and <a class="text-amber-50 hover:text-amber-400" href="https://github.com/poole/hyde" target="_blank">Hyde</a>. Hosted with <span class="fa fa-heart-o"></span> on <a class="text-amber-50 hover:text-amber-400" href="http://pages.github.com/" target="_blank">Github Pages</a>.
       </small>
     </p>
 
-    <a id="easter_egg" href="https://en.wikipedia.org/wiki/Doom_(1993_video_game)"></a>
+    <a id="easter_egg" href="https://en.wikipedia.org/wiki/Doom_(1993_video_game)" class="hidden h-8 w-7" style="background-image: url(/public/images/doom_marine.gif);"></a>
 
-    <div class="mobile-menu-arrow mobile-menu-arrow-up"></div>
+    <div class="mobile-menu-arrow mx-auto hidden h-4 w-4 rotate-45 cursor-pointer border-r-2 border-b-2 border-white max-md:block"></div>
   </div>
 </div>

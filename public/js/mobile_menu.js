@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   menuArrow.onclick = function () {
-    menuArrow.classList.toggle("mobile-menu-arrow-up");
-    menuArrow.classList.toggle("mobile-menu-arrow-down");
+    menuArrow.classList.toggle("rotate-45");
+    menuArrow.classList.toggle("-rotate-45");
 
     sidebarItems.forEach(function (item) {
-      item.classList.toggle("show-mobile");
+      item.classList.toggle("hidden");
     });
   };
 });
