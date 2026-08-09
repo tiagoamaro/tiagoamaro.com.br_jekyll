@@ -1,4 +1,4 @@
-.PHONY: install install-ruby install-node up
+.PHONY: install install-ruby install-node build up
 
 install: install-ruby install-node
 
@@ -7,6 +7,10 @@ install-ruby:
 
 install-node:
 	npm install
+
+build:
+	npm run build:css
+	bundle exec jekyll build
 
 up:
 	npm run watch:css & \
