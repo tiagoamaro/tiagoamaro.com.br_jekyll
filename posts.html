@@ -13,9 +13,9 @@ title: Posts
 
 <hr>
 
-<ul class="posts">
+<ul class="pl-4">
     {% for post in site.posts %}
-    <li>
+    <li class="mt-2.5">
         <a href="{{ post.url }}">{{ post.title }}</a> {{ post.date | date_to_string }}
     </li>
     {% endfor %}
