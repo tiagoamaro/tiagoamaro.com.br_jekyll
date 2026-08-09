@@ -8,7 +8,7 @@ baseurl:     ''
 url:         https://tiagoamaro.com.br
 
 # Setup
-exclude:     ['Gemfile', 'LICENSE', 'README', 'CNAME']
+exclude:     ['Gemfile', 'LICENSE', 'README', 'CNAME', 'CLAUDE.md']
 
 # Jekyll SEO tag
 title: "Tiago Padrela Amaro"
