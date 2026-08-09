@@ -15,6 +15,11 @@
   <meta name="google-site-verification" content="R0IzQeYRkG8i9_d7_jq546RZ589H33qJwAs8X_EH23M" />
 
   <!-- CSS -->
+  <!-- Orders the `legacy` cascade layer between Tailwind's `base` (Preflight)
+       and `components`/`utilities`: legacy still loses to Tailwind utility
+       classes regardless of selector specificity, but still beats Preflight's
+       resets for pages not yet migrated to Tailwind. -->
+  <style type="text/css">@layer theme, base, legacy, components, utilities;</style>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Berkshire+Swash"/>
   <link rel="stylesheet" type="text/css" href="/public/css/tailwind.css"/>
 
@@ -23,7 +28,9 @@
     {% capture include_to_scssify %}
       {% include style.scss %}
     {% endcapture %}
-    {{ include_to_scssify | scssify }}
+    @layer legacy {
+      {{ include_to_scssify | scssify }}
+    }
   </style>
 
   <!-- Icons -->
