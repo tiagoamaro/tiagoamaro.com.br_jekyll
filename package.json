@@ -1,0 +1,27 @@
+{
+  "name": "tiagoamaro.com.br_jekyll",
+  "version": "1.0.0",
+  "description": "[tiagoamaro.com.br](http://tiagoamaro.com.br) (Using Jekyll) ========================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./_tailwind/input.css -o ./public/css/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./_tailwind/input.css -o ./public/css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagoamaro/tiagoamaro.com.br_jekyll.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tiagoamaro/tiagoamaro.com.br_jekyll/issues"
+  },
+  "homepage": "https://github.com/tiagoamaro/tiagoamaro.com.br_jekyll#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3"
+  }
+}

@@ -85,3 +85,6 @@ crashlytics-build.properties
 
 # Ignore .bundle
 .bundle/
+
+### Node ###
+node_modules/
