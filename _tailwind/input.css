@@ -1,1 +1,133 @@
 @import "tailwindcss";
+
+/*
+ * Base typography for markdown-rendered content (post/page bodies, kramdown
+ * output). These are raw tags with no class attributes, so utility classes
+ * in markup can't reach them — styled here via Tailwind's design tokens
+ * instead. Replaces poole.scss/hyde.scss's global resets, migrated as part
+ * of the Tailwind-only CSS migration.
+ */
+@layer base {
+  html {
+    @apply font-sans leading-normal;
+  }
+
+  body {
+    @apply text-neutral-600 bg-white;
+  }
+
+  a {
+    @apply text-sky-600 underline;
+  }
+  a:hover {
+    @apply font-bold;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply mb-2 font-bold leading-tight text-neutral-800;
+  }
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply mt-4 text-2xl;
+  }
+  h3 {
+    @apply mt-6 text-xl;
+  }
+  h4, h5, h6 {
+    @apply mt-4 text-base;
+  }
+
+  p {
+    @apply mt-0 mb-4;
+  }
+
+  strong {
+    @apply text-neutral-800;
+  }
+
+  ul, ol, dl {
+    @apply mt-0 mb-4;
+  }
+  dt {
+    @apply font-bold;
+  }
+  dd {
+    @apply mb-2;
+  }
+
+  hr {
+    @apply my-6 border-0 border-t border-neutral-100;
+  }
+
+  abbr {
+    @apply text-sm font-bold text-neutral-600 uppercase;
+  }
+  abbr[title] {
+    @apply cursor-help border-b border-dotted border-neutral-200;
+  }
+
+  code, pre {
+    @apply font-mono;
+  }
+  code {
+    @apply rounded px-2 py-1 text-sm text-red-400 bg-neutral-50;
+  }
+  pre {
+    @apply mt-0 mb-4 block p-4 text-sm leading-snug whitespace-pre-wrap break-all wrap-break-word bg-neutral-50;
+  }
+  pre code {
+    @apply p-0 text-inherit bg-transparent;
+  }
+
+  .highlight {
+    @apply mb-4 rounded;
+  }
+  .highlight pre {
+    @apply mb-0;
+  }
+
+  .gist .gist-file {
+    font-family: theme(--font-mono) !important;
+  }
+  .gist .markdown-body {
+    @apply p-4;
+  }
+  .gist pre {
+    @apply p-0 bg-transparent;
+  }
+  .gist .gist-file .gist-data {
+    @apply text-sm leading-snug;
+  }
+  .gist code {
+    @apply p-0 text-inherit bg-transparent rounded-none;
+  }
+
+  blockquote {
+    @apply my-4 border-l-4 border-neutral-200 py-2 px-4 text-neutral-500;
+  }
+  blockquote p:last-child {
+    @apply mb-0;
+  }
+
+  img {
+    @apply mx-0 mt-0 mb-4 block max-w-full rounded;
+  }
+
+  table {
+    @apply mb-4 w-full border border-collapse border-neutral-200;
+  }
+  td, th {
+    @apply border border-neutral-200 py-1 px-2;
+  }
+  tbody tr:nth-child(odd) td,
+  tbody tr:nth-child(odd) th {
+    @apply bg-neutral-50;
+  }
+
+  /* Links inside rendered content — brand color, matches sidebar bg-teal-800 */
+  .content a {
+    @apply text-teal-800;
+  }
+}
