@@ -2,16 +2,14 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
+<div class="mb-16">
+  <h1 class="mt-0 text-neutral-800">{{ page.title }}</h1>
 
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <span class="-mt-2 mb-4 block text-neutral-400">{{ page.date | date_to_string }}</span>
 
   {% include read_time.html %}
 
   {{ content }}
 </div>
 
-<div class="disqus">
-  {% include disqus.html %}
-</div>
+{% include disqus.html %}
